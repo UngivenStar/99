@@ -10,11 +10,13 @@ config_version=5
 
 [application]
 
-config/name="pou2"
+config/name="pou"
+run/main_scene="uid://deb03nf0s7vdh"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
