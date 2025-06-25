@@ -39,7 +39,6 @@ func _on_body_entered(body: Node2D) -> void:
 					body.puede_rebotar(rebote)
 				else:
 					body.velocity.y = body.brinco * rebote
-			type_plat.PINCHOS:
 					
 
 
