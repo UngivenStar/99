@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://djsbdfaibsnko"]
-
-[ext_resource type="Script" uid="uid://diltfml1jums8" path="res://reset_area.gd" id="1_vwgfo"]
-
-[node name="reset_area" type="Area2D"]
-script = ExtResource("1_vwgfo")
