@@ -38,7 +38,7 @@ func _on_body_entered(body: Node2D) -> void:
 				if body.has_method("puede_rebotar"):
 					body.puede_rebotar(rebote)
 				else:
-					body.velocity.y = body.JUMP_VELOCITY * rebote
+					body.velocity.y = body.brinco * rebote
 					
 
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://bjl8pxgokjxoi"]
+[gd_scene load_steps=16 format=4 uid="uid://bbkdedovlbty5"]
 
 [ext_resource type="Texture2D" uid="uid://b65ie5xfgcmpx" path="res://assests/TX Tileset Ground.png" id="1_87khy"]
 [ext_resource type="Texture2D" uid="uid://c7r3deuc1sv58" path="res://assests/TX Village Props.png" id="1_ad53a"]
