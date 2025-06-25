@@ -13445,6 +13445,7 @@ texture = ExtResource("13_cwc05")
 hframes = 8
 
 [node name="Camera2D" type="Camera2D" parent="personaje2"]
+position = Vector2(-531, -8)
 zoom = Vector2(3, 3)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="personaje2"]
@@ -13457,5 +13458,6 @@ libraries = {
 }
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-527, -8)
 
 [connection signal="body_entered" from="Plataforma7" to="personaje2" method="_on_plataforma_7_body_entered"]
