@@ -13,18 +13,18 @@ func _ready():
 func act_plat():
 	match type:
 		type_plat.FIJA:
-			$Sprite2D.modulate = Color.DARK_TURQUOISE
+			$Sprite2D.modulate
 		type_plat.OSCILATORIA:
-			$Sprite2D.modulate = Color.CHARTREUSE
+			$Sprite2D.modulate
 			oscilar()
 		type_plat.FRAGIL:
-			$Sprite2D.modulate = Color.CORNFLOWER_BLUE
+			$Sprite2D.modulate
 			
 		type_plat.REBOTE:
-			$Sprite2D.modulate = Color.DEEP_PINK
+			$Sprite2D.modulate
 			
 		type_plat.PINCHOS:
-			$Sprite2D.modulate = Color.MEDIUM_SPRING_GREEN
+			$Sprite2D.modulate
 	
 
 
@@ -32,13 +32,13 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("personaje"):
 		match type:
 			type_plat.FRAGIL:
-					await get_tree().create_timer(0.25).timeout
+					await get_tree().create_timer(0.20).timeout
 					queue_free()
 			type_plat.REBOTE:
 				if body.has_method("puede_rebotar"):
 					body.puede_rebotar(rebote)
 				else:
-					body.velocity.y = body.brinco * rebote
+					body.velocity.y = body.JUMP_VELOCITY * rebote
 					
 
 
