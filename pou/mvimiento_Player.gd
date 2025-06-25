@@ -63,12 +63,8 @@ func animations(direction):
 
 
 func _on_reser_area_body_entered(body: Node2D) -> void:
-	get_tree().reload_current_scene()
+	pass # Replace with function body.
 
 func _on_reset_area_body_entered(body: Node2D) -> void:
 	get_tree().reload_current_scene()
 	
-
-
-func _on_plataforma_7_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.
