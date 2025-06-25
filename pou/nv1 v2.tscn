@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=4 uid="uid://5orww20emks3"]
+[gd_scene load_steps=15 format=4 uid="uid://5orww20emks3"]
 
 [ext_resource type="Texture2D" uid="uid://c7r3deuc1sv58" path="res://assests/TX Village Props.png" id="1_i5cm8"]
 [ext_resource type="Texture2D" uid="uid://b65ie5xfgcmpx" path="res://assests/TX Tileset Ground.png" id="2_xqcmw"]
 [ext_resource type="PackedScene" uid="uid://bv3j460gbxqid" path="res://plataformas.tscn" id="3_xljga"]
+[ext_resource type="PackedScene" uid="uid://bbkmqx16qw34i" path="res://personaje.tscn" id="4_xqcmw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wjcuv"]
 texture = ExtResource("1_i5cm8")
@@ -4647,3 +4648,6 @@ shape = SubResource("RectangleShape2D_pkns7")
 [node name="Area2D" parent="." instance=ExtResource("3_xljga")]
 position = Vector2(263, 22)
 type = 1
+
+[node name="personaje" parent="." instance=ExtResource("4_xqcmw")]
+position = Vector2(-414, -121)

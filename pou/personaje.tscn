@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bm2hq1jgeirk0" path="res://gato/FreeCatCharacterAnimations/4_Cat_Fall-Sheet.png" id="4_35kqm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xhihd"]
-size = Vector2(13, 20)
+size = Vector2(17, 29)
 
 [sub_resource type="Animation" id="Animation_whh2o"]
 length = 0.001
@@ -227,16 +227,16 @@ _data = {
 script = ExtResource("1_ck3sb")
 
 [node name="Sprite2D" type="Sprite2D" parent="personaje"]
-position = Vector2(4.5, 8.5)
-scale = Vector2(1.40625, 1.34375)
+position = Vector2(12, 15)
+scale = Vector2(1.875, 1.75)
 texture = ExtResource("1_gj0cs")
 hframes = 8
 
 [node name="Camera2D" type="Camera2D" parent="personaje"]
-zoom = Vector2(3, 3)
+zoom = Vector2(2, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="personaje"]
-position = Vector2(4, 12)
+position = Vector2(10.5, 19.5)
 shape = SubResource("RectangleShape2D_xhihd")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="personaje"]
