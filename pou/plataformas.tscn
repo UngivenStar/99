@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bv3j460gbxqid"]
+[gd_scene load_steps=4 format=3 uid="uid://bv3j460gbxqid"]
 
 [ext_resource type="Script" uid="uid://dsitulq8vpcqh" path="res://plataformas.gd" id="1_br0fb"]
 [ext_resource type="Texture2D" uid="uid://b65ie5xfgcmpx" path="res://assests/TX Tileset Ground.png" id="2_hbqx3"]
