@@ -4,9 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://c7r3deuc1sv58" path="res://assests/TX Village Props.png" id="1_ad53a"]
 [ext_resource type="Script" uid="uid://dbe6f7sho0v4g" path="res://nivel_2.gd" id="1_lcku5"]
 [ext_resource type="PackedScene" uid="uid://bbkmqx16qw34i" path="res://personaje.tscn" id="2_q8r28"]
-[ext_resource type="Script" uid="uid://cu1nu68uvoado" path="res://personaje.gd" id="5_47rbp"]
+[ext_resource type="Script" uid="uid://d4e4tmipmdqs5" path="res://animation_player.gd" id="4_koc46"]
 [ext_resource type="PackedScene" uid="uid://c40mt676nppfc" path="res://parallax_background.tscn" id="5_pheri"]
-[ext_resource type="PackedScene" uid="uid://d14h3od3fhxyq" path="res://plata_bucle_Nvl2.tscn" id="5_wo1x7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_koc46"]
 texture = ExtResource("1_ad53a")
