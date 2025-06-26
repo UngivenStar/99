@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://cs46nx7q41jav"]
+
+[ext_resource type="Script" uid="uid://p8rb5570hnme" path="res://puerta.gd" id="1_8gvf5"]
+[ext_resource type="Texture2D" uid="uid://b0wolrj6ghra7" path="res://assests/Door.png" id="1_bek8y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bek8y"]
+size = Vector2(32, 33)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8gvf5"]
+radius = 25.0
+height = 50.0
+
+[node name="Puerta" type="Node2D"]
+script = ExtResource("1_8gvf5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(1.3125, 1.34375)
+texture = ExtResource("1_bek8y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_bek8y")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_8gvf5")
+debug_color = Color(0.65993, 0.509438, 0.207444, 0.42)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -90.0
+offset_top = -44.0
+offset_right = 20.0
+offset_bottom = -21.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
