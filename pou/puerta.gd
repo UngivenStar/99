@@ -2,7 +2,6 @@ extends Node2D
 
 var llave = 0
 
-
 @onready var ui_label = $"../Puerta/Label"
 
 func _ready() -> void:
@@ -17,6 +16,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		ui_label.text = "Necesitas la llave para abrir la puerta"
 
 
+
 func _on_llave_puerta_llave() -> void:
 	llave = 1  
 	upgrade_ui()
@@ -25,6 +25,7 @@ func _on_llave_puerta_llave() -> void:
 func upgrade_ui() -> void:
 	if llave == 1:
 		ui_label.text = "Llaves: 1"
+		
 		await get_tree().create_timer(0.5).timeout
 		
 

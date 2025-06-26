@@ -13255,9 +13255,16 @@ position = Vector2(869, 257)
 type = 1
 
 [node name="Llave" parent="." instance=ExtResource("14_pkns7")]
-position = Vector2(-124, 0)
+position = Vector2(1010, -1070)
 
 [node name="Puerta" parent="." instance=ExtResource("15_upouy")]
-position = Vector2(-55, 2)
+position = Vector2(-89, 0)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -570.0
+offset_top = -105.0
+offset_right = -417.0
+offset_bottom = -82.0
+text = "Encuentra una llave"
 
 [connection signal="puerta_llave" from="Llave" to="Puerta" method="_on_llave_puerta_llave"]
