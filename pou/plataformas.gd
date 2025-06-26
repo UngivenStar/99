@@ -1,6 +1,6 @@
 extends Area2D
  
-enum type_plat {FIJA, OSCILATORIA, FRAGIL, REBOTE, PINCHOS}
+enum type_plat {FIJA, OSCILATORIA, FRAGIL, REBOTE, REINICIO}
 @export var type: type_plat = type_plat.FIJA;
 @export var rebote := 2.0 
 
@@ -13,19 +13,18 @@ func _ready():
 func act_plat():
 	match type:
 		type_plat.FIJA:
-			$Sprite2D.modulate = Color.DARK_TURQUOISE
+			$Sprite2D.modulate
 		type_plat.OSCILATORIA:
-			$Sprite2D.modulate = Color.CHARTREUSE
+			$Sprite2D.modulate
 			oscilar()
 		type_plat.FRAGIL:
-			$Sprite2D.modulate = Color.CORNFLOWER_BLUE
+			$Sprite2D.modulate
 			
 		type_plat.REBOTE:
-			$Sprite2D.modulate = Color.DEEP_PINK
+			$Sprite2D.modulate
 			
-		type_plat.PINCHOS:
-			$Sprite2D.modulate = Color.MEDIUM_SPRING_GREEN
-	
+		type_plat.REINICIO:
+			$Sprite2D.modulate = Color.RED
 
 
 func _on_body_entered(body: Node2D) -> void:
@@ -38,8 +37,11 @@ func _on_body_entered(body: Node2D) -> void:
 				if body.has_method("puede_rebotar"):
 					body.puede_rebotar(rebote)
 				else:
-					body.velocity.y = body.brinco * rebote
-					
+					body.velocity.y = body.JUMP_VELOCITY * rebote
+			type_plat.REINICIO:
+					get_tree().reload_current_scene()
+
+
 
 
 func oscilar():

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://0upovnj1p0xa" path="res://resetarea.gd" id="1_yrnqj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrnqj"]
+size = Vector2(6123, 89)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_yrnqj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(435.5, 34.5)
+shape = SubResource("RectangleShape2D_yrnqj")
+debug_color = Color(0.69577, 0.349479, 0.88286, 0.42)
