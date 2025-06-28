@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" uid="uid://e72hk5p5k4tg" path="res://reset_area.gd" id="1_mx8pd"]
+[ext_resource type="Texture2D" uid="uid://c6sfx3bdouhc3" path="res://assests/TX FX Flame.png" id="2_j5axd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_73kq8"]
+size = Vector2(2089.5, 20)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_mx8pd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_j5axd")
+hframes = 6
+vframes = 4
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(111.25, 10)
+shape = SubResource("RectangleShape2D_73kq8")
+debug_color = Color(0.717501, 0.253359, 1, 0.42)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(116, -6)
+shape = SubResource("RectangleShape2D_73kq8")
+debug_color = Color(0.647819, 0.507593, 0.332248, 0.42)

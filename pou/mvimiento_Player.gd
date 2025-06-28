@@ -3,16 +3,19 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 const MAX_JUMPS = 2
-
+var has_key: bool = false
+@export var next_level_scene: String = "res://nivel2.1.tscn"
 var jumps = 0
 
 @onready var animationPlayer = $AnimationPlayer
 @onready var sprite = $Sprite2D
 
-
+@onready var detector = $Detector
 
 func _ready():
 	add_to_group("personaje")
+	
+
 
 func _physics_process(delta: float) -> void:
 	# Agregar gravedad si no estamos en el suelo
@@ -36,6 +39,8 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+
+
 	# Animaciones
 	animations(direction)
 
@@ -44,7 +49,6 @@ func _physics_process(delta: float) -> void:
 		sprite.flip_h = false
 	elif direction == -1:
 		sprite.flip_h = true
-
 
 func animations(direction):
 	if is_on_floor():
@@ -59,12 +63,14 @@ func animations(direction):
 			animationPlayer.play("fall")
 
 
+func _on_Detector_body_entered(body: Node2D) -> void:
+	# 1) Picking up the key
+	if body.is_in_group("Key") and not has_key:
+		has_key = true
+		body.queue_free()            # remove the key from the map
+		# you can play a sound/animation here…
 
-
-
-func _on_reser_area_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.
-
-func _on_reset_area_body_entered(body: Node2D) -> void:
-	get_tree().reload_current_scene()
-	
+	# 2) Unlock the door if we have the key
+	elif body.is_in_group("Door") and has_key:
+		# you can play a door‐unlock animation here…
+		get_tree().change_scene(next_level_scene)
