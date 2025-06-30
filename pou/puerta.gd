@@ -14,7 +14,9 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 			
 	elif body.get_name() == "personaje2" and llave == 0:
 		ui_label.text = "Necesitas la llave para abrir la puerta"
-
+		await get_tree().create_timer(0.6).timeout
+		upgrade_ui()
+		
 
 
 func _on_llave_puerta_llave() -> void:
@@ -27,6 +29,8 @@ func upgrade_ui() -> void:
 		ui_label.text = "Llaves: 1"
 		
 		await get_tree().create_timer(0.5).timeout
+		
+		
 		
 
 	else:
