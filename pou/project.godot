@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="pou"
-run/main_scene="uid://deb03nf0s7vdh"
+config/name="Proyecto 2 Final Ataly Y Carolina 2025-06-30 13-12-53"
+run/main_scene="uid://5orww20emks3"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

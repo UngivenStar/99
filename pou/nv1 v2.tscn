@@ -13241,6 +13241,14 @@ type = 1
 position = Vector2(-346, 253)
 type = 1
 
+[node name="Area2D22" parent="." instance=ExtResource("16_upouy")]
+position = Vector2(-2442, 253)
+type = 1
+
+[node name="Area2D22" parent="Area2D22" instance=ExtResource("16_upouy")]
+position = Vector2(5401, 7)
+type = 1
+
 [node name="Area2D9" parent="." instance=ExtResource("16_upouy")]
 position = Vector2(869, 257)
 type = 1
@@ -13259,6 +13267,6 @@ offset_bottom = -82.0
 text = "Encuentra una llave"
 
 [node name="personaje" parent="." instance=ExtResource("15_pkns7")]
-position = Vector2(-413, -99)
+position = Vector2(-547, -33)
 
 [connection signal="puerta_llave" from="Llave" to="Puerta" method="_on_llave_puerta_llave"]
