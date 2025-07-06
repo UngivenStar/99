@@ -18,6 +18,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		upgrade_ui()
 
 
+
 func _on_llave_puerta_llave() -> void:
 	llave = 1  
 	upgrade_ui()
@@ -28,6 +29,8 @@ func upgrade_ui() -> void:
 		ui_label.text = "Llaves: 1"
 		
 		await get_tree().create_timer(0.5).timeout
+		
+		
 		
 
 	else:

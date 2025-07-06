@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://h0qpmepd1sqd" path="res://background/Layer_0002_7.png" id="6_38s6d"]
 [ext_resource type="Texture2D" uid="uid://d1f3tludvw8eo" path="res://background/Layer_0003_6.png" id="6_fowbj"]
 [ext_resource type="Texture2D" uid="uid://g74n0g2ho427" path="res://background/Layer_0005_5.png" id="6_u8ra0"]
-[ext_resource type="PackedScene" path="C:/Users/crism/Documents/99/personaje2.tscn" id="11_38s6d"]
 [ext_resource type="PackedScene" uid="uid://bv3j460gbxqid" path="res://plataformas.tscn" id="12_fowbj"]
 [ext_resource type="PackedScene" uid="uid://bicdq6r6p17ne" path="res://llave.tscn" id="14_pkns7"]
+[ext_resource type="PackedScene" uid="uid://bbkmqx16qw34i" path="res://personaje.tscn" id="15_pkns7"]
 [ext_resource type="PackedScene" uid="uid://cs46nx7q41jav" path="res://puerta.tscn" id="15_upouy"]
 [ext_resource type="PackedScene" uid="uid://5oookx41yqel" path="res://reset3.tscn" id="16_upouy"]
 
@@ -13237,15 +13237,6 @@ type = 3
 position = Vector2(607, -982)
 type = 1
 
-[node name="personaje2" parent="." instance=ExtResource("11_38s6d")]
-position = Vector2(-509, -30)
-
-[node name="Label" type="Label" parent="personaje2"]
-offset_left = -25.0
-offset_top = -31.0
-offset_right = 58.0
-offset_bottom = -8.0
-
 [node name="Area2D8" parent="." instance=ExtResource("16_upouy")]
 position = Vector2(-346, 253)
 type = 1
@@ -13266,5 +13257,8 @@ offset_top = -105.0
 offset_right = -417.0
 offset_bottom = -82.0
 text = "Encuentra una llave"
+
+[node name="personaje" parent="." instance=ExtResource("15_pkns7")]
+position = Vector2(-413, -99)
 
 [connection signal="puerta_llave" from="Llave" to="Puerta" method="_on_llave_puerta_llave"]
