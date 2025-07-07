@@ -61,16 +61,3 @@ func animations(direction):
 			animationPlayer.play("jump")
 		elif velocity.y > 0:
 			animationPlayer.play("fall")
-
-
-func _on_Detector_body_entered(body: Node2D) -> void:
-	# 1) Picking up the key
-	if body.is_in_group("Key") and not has_key:
-		has_key = true
-		body.queue_free()            # remove the key from the map
-		# you can play a sound/animation here…
-
-	# 2) Unlock the door if we have the key
-	elif body.is_in_group("Door") and has_key:
-		# you can play a door‐unlock animation here…
-		get_tree().change_scene(next_level_scene)
