@@ -9,6 +9,7 @@ Jump Cat es un juego de plataforma, en el cuel el personaje cuenta con mecanicas
 
 
 Recursos Utilizados: Assets 
+
 ![image](https://github.com/user-attachments/assets/0f0b7ee9-c4d3-4b3d-a92d-0ab029829f20)  ![image](https://github.com/user-attachments/assets/baeac1bd-1309-493a-9cd2-2ea48c41a97a)
 
 
