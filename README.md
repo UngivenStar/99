@@ -1,5 +1,10 @@
 JUMP CAT
 
-![image](https://github.com/user-attachments/assets/53b72171-305c-4a0f-b887-77cb33b24866)
+BY: Sandra Carolina and Haziel Hernandez 
 
-https://www.notion.so/LOGICAL-PARADIGM-1f2aed93115380fe8addf3d2c1d27bde?source=copy_link
+Descripion de juego:
+JUMP CAT es un videojuego 2D de tipo plataforma, inspirado en las primeras entregas del famoso juego Super Mario Bros.
+Jump Cat es un juego de plataforma, en el cuel el personaje cuenta con mecanicas o fisicas el cual le permiten al jugador: Saltar, moverse de manera horizonal Izquierda a derecha, Correr, hacer doble salto, caer y poder recoger un objeto el cual es una llave que le permite pasar a un siguiente nivel
+
+
+
