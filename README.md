@@ -9,7 +9,7 @@
 ·.★·.·´¯`·.·★ 𝘑𝘶𝘮𝘱 𝘤𝘢𝘵 ★·.·´¯`·.·★.· 
 </h1>
 
-## ----------------------------------------------------------------------------------------------
+## --------------------------------------------------------------------------------------
 <div align="center">
 	Jump Cat es un pequeño juego plataformero inspirado en la estetica cottagecore.
 </div>
@@ -17,7 +17,7 @@
 Las mecanicas del juego son simples, durante el primer nivel debes de navegar por el mapa hasta encontrar la llave que abrira la puerta para pasar al siguiente nivel, teniendo que saltar de plataforma en plataforma para seguir avanzando en los niveles.
 </div>
 
-## ----------------------------------------------------------------------------------------------
+## --------------------------------------------------------------------------------------
 <h2>
 	<img src="https://i.pinimg.com/originals/99/f0/e0/99f0e02f90185be9fbfb46e62ddfa9f3.gif" width="5%">
 	Integrantes del Equipo  
