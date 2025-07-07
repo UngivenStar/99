@@ -97,6 +97,12 @@ Personaje
 
 ----------------------------------------------------------------------------------------------
 
+</div>
+- Magic Chase – Tilemap background Nivel 2. - link: [🔗](https://memmam.itch.io/magicchase) -
+  <img src="https://img.tapimg.net/market/images/7b2304ea09772e436f95a3fa1cebda71.png?imageView2/0/w/360/h/203/format/jpg/interlace/1/ignore-error/1&t=1" width="70%"/>
+
+----------------------------------------------------------------------------------------------
+
 ### Sprites  
 - Cat Character Asset Pack – link: [🔗](https://oboropixel.itch.io/character-animations) -
 
@@ -104,9 +110,24 @@ Personaje
   <img src="https://img.itch.zone/aW1hZ2UvMjczMTMzNS8xNjMyOTYyMC5naWY=/347x500/Knr03I.gif" width="40%"/>
 </div>
 
+----------------------------------------------------------------------------------------------
+
+- Puerta -
+<a href="https://imgbb.com/">
+<img src="https://i.ibb.co/dJ3wnfCL/Door.png" alt="Door" border="0">
+</a>
+
+----------------------------------------------------------------------------------------------
 
 
----
+- llaves y objectos -
+<a href="https://imgbb.com/">
+<img src="https://i.ibb.co/jZrHGMwh/PS-Items.png" alt="PS-Items" border="0">
+</a>
+
+----------------------------------------------------------------------------------------------
+
+
 
 ## Escenas 
 ### Nivel 1 
