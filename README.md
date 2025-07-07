@@ -31,6 +31,7 @@ EL nivel 1 tiene Un personaje jugabe con mecanicas,  plataformas de movimiento, 
 
                                                             
 ![image](https://github.com/user-attachments/assets/808829fa-52a3-4025-b1b8-601bce58f230)
+ELsefundo nivel cuenta con dk ¿¿k odfdi
                                                      
                                                     
                                                     
